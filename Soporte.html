@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Fav Icon-->
+    <link
+      rel="shortcut icon"
+      href="imagenes/video-player.png"
+      type="image/x-icon"
+    />
+    <title>WATCHINOW</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Nav Bar -->
+      <div class="container">
+        <div class="row">
+          <div>
+            <img src="imagenes/video-player.png" alt="El logo" />WATCHINOW
+          </div>
+          <nav class="nav">
+            <ul class="nav-List">
+              <li class="nav-Item">
+                <a class="nav-Link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-Item">
+                <a class="nav-Link" href="Series.html">Series</a>
+              </li>
+              <li class="nav-Item">
+                <a class="nav-Link" href="Peliculas.html">Peliculas</a>
+              </li>
+              <li class="nav-Item">
+                <a class="nav-Link" href="Categorias.html">Categorias</a>
+              </li>
+              <li class="nav-Item">
+                <a class="nav-Link" href="Soporte.html">Soporte</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section>
+      <h2>Contacto</h2>
+      <form action="">
+        <fieldset>
+          <label for="Nombre">Nombre completo</label>
+          <input type="text" /><br />
+          <label for="Nombre">Correo</label>
+          <input type="text" required /><br />
+          <label for="Plan">Tipo de plan</label>
+          <select name="Plan" id="Plan">
+            <option value="Standard">Standard</option>
+            <option value="Premium">Premium</option>
+            <option value="VIP">VIP</option></select
+          ><br />
+          <label for="PQR">Petición Queja o Reclamo</label><br />
+          <input type="radio" name="PQR" id="PQR" value="peticion" />Petición
+          <input type="radio" name="PQR" id="PQR" value="queja" />Queja
+          <input type="radio" name="PQR" id="PQR" value="reclamo" />Reclamo
+          <br />
+          <label for="">Describa a detalle su solicitud </label> <br />
+          <textarea name="solicitud" id="solicitud" cols="30" rows="10">
+Detalle sus comentarios aquí</textarea
+          >
+          <br />
+          <input type="submit" name="enviar" value="Enviar formulario" />
+          <input type="reset" name="enviar" value="Borrar formulario" />
+        </fieldset>
+      </form>
+    </section>
+  </body>
+</html>
